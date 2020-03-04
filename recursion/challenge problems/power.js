@@ -1,4 +1,4 @@
-//  write a function called power which accepts a ase and an exponent.
+//  write a function called power which accepts a base and an exponent.
 //  the fucntion should return the power of the base to the the
 //  exponenet this function should mimic the functionaly of Math.power() 
 //  do not worry about negative base and exponents
