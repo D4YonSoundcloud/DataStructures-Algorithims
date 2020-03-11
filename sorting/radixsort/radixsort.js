@@ -35,6 +35,7 @@ function radixSort(nums){
         }
         nums = [].concat(...digitBuckets);
     }
+    return nums;
 }
 
 radixSort([23,345,5467,12,3245,9852])
