@@ -51,4 +51,4 @@ function binarySearch2(arr, val) {
 
 }
 
-binarySearch2([1, 2, 3, 4, 4, 5, 6, 7], 28);
+binarySearch2([1, 2, 3, 4, 5, 6, 7], 28);

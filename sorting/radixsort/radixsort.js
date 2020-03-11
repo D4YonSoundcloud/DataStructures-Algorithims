@@ -22,7 +22,6 @@ function mostDigits(nums) {
     return maxDigits;
 }
 
-
 // full implenmatation
 
 function radixSort(nums){
@@ -39,3 +38,6 @@ function radixSort(nums){
 }
 
 radixSort([23,345,5467,12,3245,9852])
+
+//time complexity is O(nk)
+//space complexity is O(n + k)
