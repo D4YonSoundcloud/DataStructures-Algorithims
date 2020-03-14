@@ -123,6 +123,40 @@ class doublyLinkedList {
     this.length--;
     return foundNode;
   }
+
+  reverse() {
+    if (!this.head) return undefined;
+    var node = this.head;
+    this.head = this.tail;
+    node = this.tail;
+    node.next = null;
+    this.head.prev = null;
+    var prev = null;
+    var next = null;
+    for (i = 0; i < this.length - 1; i++) {
+      prev = this.head.next;
+      next = prev.next;
+      var temp = next;
+      prev = next;
+      next = temp;
+    }
+    return this;
+  }
+
+  //different reverse solution
+  reverse2() {
+    var current = this.head;
+    while (current) {
+      var temp = current.next;
+      current.next = current.prev;
+      current.prev = temp;
+      current = temp;
+    }
+    var temp = current;
+    current = this.tail;
+    this.tail = temp;
+    return this;
+  }
 }
 
 // big O of doubly Linked List
