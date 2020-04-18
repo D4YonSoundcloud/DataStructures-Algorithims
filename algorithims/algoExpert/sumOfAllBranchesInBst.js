@@ -9,8 +9,9 @@ class BinaryTree {
   }
 }
 
+
+
 function branchSums(root) {
-  // Write your code here.
   const sums = [];
   helper(root, 0, sums);
   return sums;
