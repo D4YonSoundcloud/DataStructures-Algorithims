@@ -39,7 +39,7 @@ function binarySearch(arr, val) {
 
 function binarySearch2(arr, val) {
   var start = 0;
-  var end = arr.length - 2;
+  var end = arr.length - 1;
   var middle = Math.floor((start + end) / 2);
   while (arr[middle] !== val && start <= end) {
     if (val < arr[middle]) end = middle - 1;
@@ -48,7 +48,6 @@ function binarySearch2(arr, val) {
     middle = Math.floor((start + end) / 2);
   }
   return arr[middle] == val ? middle : -1;
-
 }
 
 binarySearch2([1, 2, 3, 4, 5, 6, 7], 28);
