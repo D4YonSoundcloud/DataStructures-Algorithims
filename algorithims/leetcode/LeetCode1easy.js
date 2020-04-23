@@ -4,13 +4,11 @@
 //  otherwise, you have to subtract 1 from it.
 
 
-const numberOfSteps  = function(num) {
+function numOfSteps(num) {
     var count = 0;
-
     while(num>0){
         num % 2 ? (num--, count++) : (num/=2, count++);
     }
-    
     return count;
 }
 
